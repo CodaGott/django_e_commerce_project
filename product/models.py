@@ -15,7 +15,7 @@ CATEGORIES_CHOICE = (
 
 
 class Product(models.Model):
-    marchant = models.ForeignKey(User, on_delete=models.CASCADE)
+    merchant = models.ForeignKey(User, on_delete=models.CASCADE)
     product_image = models.ImageField(upload_to="templates/media")
     name = models.CharField(max_length=200)
     description = models.CharField(max_length=250)
